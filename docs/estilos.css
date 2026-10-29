@@ -1,93 +1,137 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
+  cursor: crosshair;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
+  margin: 17px;
+  font-family: "Comic Sans MS", cursive;
+  background-color: lime;
+  color: red;
+  line-height: 1;
 }
 
 header {
-  background-color: #2563eb;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+  background-color: yellow;
+  color: magenta;
+  text-align: left;
+  padding: 70px 5px;
+  border: 12px dashed red;
 }
 
 header h1 {
-  margin-bottom: 10px;
+  font-size: 45px;
+  text-decoration: underline;
+  transform: rotate(-3deg);
+}
+
+header p {
+  font-size: 25px;
+  background-color: cyan;
 }
 
 nav {
-  background-color: #1e293b;
-  padding: 15px;
-  text-align: center;
+  background-color: red;
+  padding: 30px 0;
+  text-align: right;
+  border: 8px dotted yellow;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+  color: lime;
+  font-size: 22px;
   font-weight: bold;
+  margin: 0 2px;
+  text-decoration: underline;
 }
 
 nav a:hover {
-  color: #93c5fd;
+  color: blue;
+  background-color: white;
 }
 
 main {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 0 20px;
+  max-width: 1500px;
+  margin: 5px;
+  padding: 40px 2px;
 }
 
 section {
-  background-color: white;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  background-color: magenta;
+  color: yellow;
+  padding: 8px;
+  margin-bottom: 50px;
+  border-radius: 0;
+  border: 10px groove lime;
+  box-shadow: 15px 15px 0 blue;
+}
+
+section:nth-child(2) {
+  background-color: blue;
+  transform: rotate(2deg);
+}
+
+section:nth-child(3) {
+  background-color: orange;
+  color: blue;
+  transform: rotate(-2deg);
 }
 
 h2 {
-  color: #2563eb;
+  color: lime;
+  font-size: 38px;
+  text-shadow: 4px 4px red;
+}
+
+p {
+  font-size: 23px;
+  letter-spacing: 4px;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  border: 15px solid red;
+  object-fit: fill;
 }
 
 button {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
+  background-color: orange;
+  color: blue;
+  border: 8px ridge magenta;
+  padding: 25px 10px;
+  border-radius: 0;
+  font-family: Impact, fantasy;
+  font-size: 22px;
+  margin: 15px;
+  transform: rotate(4deg);
 }
 
 button:hover {
-  background-color: #1d4ed8;
+  background-color: black;
+  color: yellow;
+  transform: rotate(-10deg) scale(1.2);
 }
 
 footer {
-  background-color: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: cyan;
+  color: red;
+  text-align: right;
+  padding: 50px 5px;
+  border: 12px dotted purple;
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 25px 15px;
+  body {
+    background-color: hotpink;
   }
 
   nav a {
-    display: inline-block;
-    margin: 5px 8px;
+    display: block;
+    margin: 20px;
   }
 
-  main {
-    margin: 20px auto;
+  img {
+    height: 700px;
   }
 }
