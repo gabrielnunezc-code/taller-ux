@@ -1,9 +1,7 @@
-const botones = document.querySelectorAll("button");
+const botonSaludo = document.querySelector("#boton-saludo");
+const mensaje = document.querySelector("#mensaje");
 
-botones.forEach(function (boton) {
-  boton.addEventListener("click", function () {
-    // No pasa absolutamente nada.
-  });
+botonSaludo.addEventListener("click", function () {
+  mensaje.textContent = "¡Hola! Gracias por visitar mi página web.";
+  botonSaludo.textContent = "¡Saludo enviado!";
 });
-
-console.log("Bienvenido al peor código del mundo");

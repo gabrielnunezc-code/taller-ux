@@ -1,8 +1,20 @@
-| Principio              | Cambio                                              |
-| ---------------------- | --------------------------------------------------- |
-| Visibilidad del estado | Mensaje de envio, de error y de exito               |
-| Prevencion de errores  | Campos obligatorios y validacion del correo         |
-| Control y libertad     | Confirmacion antes de limpiar el formulario         |
-| Ley de Fitts           | Boton principal grande y separado de Limpiar        |
-| Ley de Hick            | Talleres agrupados por categoria                    |
-| Accesibilidad          | Labels, texto alternativo, contraste y foco visible |
+# Aditoria
+
+## Tabla de mejoras según las leyes de usabilidad
+
+| Ley           | Problema en el diseño anterior                                                                      | Mejora propuesta                                                                               | Explicación del cambio                                                                                                                                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Ley de Fitts  | Los botones eran pequeños en algunas zonas, estaban torcidos y tenían poco orden.                   | Crear botones de tamaño adecuado, con espacio entre ellos y una ubicación visible.             | La ley de Fitts establece que cuanto más grande y cercano sea un objetivo, más fácil será seleccionarlo. Así, el usuario podrá pulsar los botones con menos esfuerzo y cometer menos errores.                                                                            |
+| Ley de Hick   | El menú tenía demasiados enlaces y opciones innecesarias, como «Botón secreto».                     | Reducir el menú a tres opciones principales: Inicio, Sobre mí y Contacto.                      | La ley de Hick indica que, generalmente, cuantas más opciones debe evaluar una persona, más tiempo necesita para decidir. Reducir las opciones facilita la navegación y acelera la toma de decisiones.                                                                   |
+| Ley de Miller | Había textos demasiado largos, repetitivos y muchos elementos visuales compitiendo por la atención. | Dividir el contenido en secciones claras y mostrar solo la información importante en cada una. | La ley de Miller se relaciona tradicionalmente con la capacidad limitada de la memoria de trabajo. Organizar la información en grupos significativos (chunks) facilita recordarla y comprenderla. No significa que siempre debamos limitar una página a siete elementos. |
+
+## Cambios adicionales recomendados
+
+| Elemento             | Antes                                                        | Después                                                                   | Beneficio                                             |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Colores              | Verde fosforescente, magenta y amarillo mezclados.           | Fondo claro, texto oscuro y un color principal azul.                      | Mejora la legibilidad y reduce la distracción.        |
+| Tipografía           | Letras de diferentes tamaños y estilos exagerados.           | Una fuente legible, con tamaños consistentes para títulos y párrafos      | Facilita la lectura y establece una jerarquía visual. |
+| Distribución         | Secciones torcidas, bordes exagerados y espacios irregualres | Secciones alineadas, márgenes consistentes y espacio entre bloques.       | Permite localizar la información más fácilmente.      |
+| Botones funcionaless | Los botones no hacían nada al pulsarlos.                     | Cada botón debe ejecutar una acción clara y mostrar un resultado esperado | Evita confusiones y mejora la confianza del usuario   |
+| Navegación           | Los enlaces no llevaban a las secciones correspondientes.    | Usar enlaces que apunten a #inicio, #sobre-mi y #contacto.                | Permite llegar directamente al contenido deseado.     |
+| Diseño adaptable     | Algunos elementos se veían demasiado grandes en móviles      | Ajustar tamaños, márgenes e imágenes según el ancho de pantalla.          | Mejora el uso en celulares, tabletas y computadoras.  |

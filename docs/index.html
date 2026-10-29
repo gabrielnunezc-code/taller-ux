@@ -3,52 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LA MEJOR PAGINA DEL MUNDO</title>
+    <meta
+      name="description"
+      content="Mi primera página web, creada con HTML, CSS y JavaScript."
+    />
+    <title>Mi primera página web</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>¡¡¡BIENVENIDOS A MI PAGINA!!!</h1>
-      <p>LA MEJOR WEB DE TODO EL UNIVERSO XD</p>
-      <button>NO TOCAR!!!!</button>
+      <div class="contenedor">
+        <h1>¡Bienvenido a mi página web!</h1>
+        <p>Aprendiendo a crear páginas web desde cero.</p>
+        <a class="boton" href="#sobre-mi">Conóceme</a>
+      </div>
     </header>
 
-    <nav>
-      <a href="#">INICIO</a>
-      <a href="#">SOBRE MI</a>
-      <a href="#">CONTACTO</a>
-      <a href="#">BOTON SECRETO</a>
+    <nav aria-label="Navegación principal">
+      <div class="nav-contenedor">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </div>
     </nav>
 
-    <main>
+    <main class="contenedor">
       <section id="inicio">
-        <h2>INICIOOOOOOO</h2>
-        <p>Hola esta es mi pagina web espero que te guste mucho mucho mucho.</p>
-        <button>Haz clic aquí</button>
+        <h2>Inicio</h2>
+        <p>
+          Esta es mi primera página web. Estoy aprendiendo a utilizar HTML, CSS
+          y JavaScript para crear proyectos.
+        </p>
+        <button id="boton-saludo" type="button">¡Saludar!</button>
+        <p id="mensaje" aria-live="polite"></p>
       </section>
 
       <section id="sobre-mi">
-        <h2>SOBRE MIIIIIIII</h2>
-        <p>SOY UNA PERSONA MUY INTERESANTE Y TAMBIEN ME GUSTA EL PAN.</p>
-        <img src="img/banner.png" alt="Imagen enorme" />
-        <button>Ver más información</button>
+        <h2>Sobre mí</h2>
+        <p>
+          Me gusta aprender cosas nuevas, desarrollar proyectos y descubrir cómo
+          funciona la tecnología.
+        </p>
+
+        <img
+          class="imagen-perfil"
+          src="img/banner.png"
+          alt="Imagen de presentación de mi página"
+          loading="lazy"
+        />
       </section>
 
       <section id="contacto">
-        <h2>CONTACTAME YA MISMO</h2>
-        <p>Mi correo es correo@ejemplo.com</p>
-        <a href="#">Enviar correo</a>
-        <br /><br />
-        <button>ENVIAR MENSAJE</button>
-        <button>NO ENVIAR MENSAJE</button>
+        <h2>Contacto</h2>
+        <p>¿Quieres escribirme? Puedes hacerlo por correo electrónico.</p>
+        <a class="boton" href="mailto:correo@ejemplo.com"> Enviar correo </a>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 LA PAGINA MAS FEA DEL MUNDO</p>
-      <button>VOLVER ARRIBA</button>
+      <p>&copy; 2026 Mi primera página web</p>
     </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>
